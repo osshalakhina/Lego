@@ -7,8 +7,18 @@ body {
   margin: 20px 10px;
 }
 
+.images {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+}
+
+.image-group {
+  display: grid;
+}
+
 .image {
-  height: 600px;
+  height: 300px;
   border: 0.75px solid rgb(208, 208, 208);
 }
 
@@ -21,41 +31,49 @@ h1 {
   margin: 0;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1167px) {
+  .images {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+
+  .image {
+    height: 500px;
+    border: 0.75px solid rgb(208, 208, 208);
+  }
+}
+
+@media only screen and (max-width: 770px) {
   .image {
     height: 500px;
   }
-}
 
-@media only screen and (max-width: 827px) {
-  .image {
-    height: 400px;
+  @media only screen and (max-width: 655px) {
+    .image {
+      height: 310px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    h1 {
+      font-size: 15px;
+      margin: 0;
+    }
   }
-}
 
-@media only screen and (max-width: 665px) {
-  .image {
-    height: 250px;
+  @media only screen and (max-width: 420px) {
+    .image {
+      height: 260px;
+    }
   }
 
-  p {
-    font-size: 12px;
-  }
-
-  h1 {
-    font-size: 15px;
-    margin: 0;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  .image {
-    height: 220px;
-  }
-}
-
-@media only screen and (max-width: 365px) {
-  .image {
-    height: 190px;
+  @media only screen and (max-width: 340px) {
+    .image {
+      height: 235px;
+    }
   }
 }
