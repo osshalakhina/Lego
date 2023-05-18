@@ -1,6 +1,6 @@
 # Lego
 
-Lego design for mask. Made in Illustrator.
+Lego design for mask. Created in Adobe Illustrator.
 
 # Preview
 
